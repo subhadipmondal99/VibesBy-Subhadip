@@ -151,8 +151,8 @@
     <div class="home-page">
         <div>
             <img src="logo.png" alt="VibesBy SM Logo" class="logo"> <!-- Add your logo here -->
-            <h1>VibesBy Subhadip</h1>
-            <h2>Developed by SUBHADIP</h2>
+            <h1>VibesBy SM</h1>
+            <h2>Developed by INFINIT SM</h2>
             <input type="text" class="form-control search-bar" id="search-input" placeholder="Search for songs...">
             <button class="btn btn-explore" onclick="showPlaylistPage('sad-songs')">Explore Playlists</button>
         </div>
@@ -197,20 +197,19 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
-        // Show playlist page and hide home page
         function showPlaylistPage(category) {
             document.querySelector('.home-page').style.display = 'none';
             document.querySelector('.playlist-page').style.display = 'block';
             populatePlaylist(category); // Populate the playlist
             changeBackground(category); // Set the background image
         }
-
+    
         // Show home page and hide playlist page
         function showHomePage() {
             document.querySelector('.home-page').style.display = 'flex';
             document.querySelector('.playlist-page').style.display = 'none';
         }
-
+    
         // Playlist functionality
         const playlistCategory = document.getElementById('playlist-category');
         const audioPlayer = document.getElementById('audio-player');
@@ -219,21 +218,20 @@
         const navbar = document.querySelector('.navbar');
         const playlistSearch = document.getElementById('playlist-search');
         const playlistPage = document.getElementById('playlist-page');
-
+    
         const categories = {
             'sad-songs': [
-            { title: 'Bekhayali', src: 'https://aac.saavncdn.com/807/db5027c7f61ea05b4f9841bfc056e1c5_160.mp4' },
-            { title: 'Phir Bhi Tumko Chaahunga', src: 'https://aac.saavncdn.com/441/5be788f75761b20e5dbcecdd3069a1c4_160.mp4' },
-            { title: 'Thodi Jagah', src: 'https://aac.saavncdn.com/951/f40fe87aa535a1095d095ec34892dbac_160.mp4' },
-            { title: 'Bhula Dena', src: 'https://aac.saavncdn.com/430/22b12410a6a242bf9b66e8b99d02254b_160.mp4' },
-            { title: 'Chal Wahan Jaate Hain', src: 'https://aac.saavncdn.com/119/c12ffa2f68c31b7244034cfc641a2143_160.mp4' },
-            { title: 'Zindagi Kuch Toh Bata', src: 'https://aac.saavncdn.com/128/1a24bc8c4d4303b4315f5dd192dc6116_160.mp4' },
-            { title: 'Baaton Ko Teri', src: 'https://aac.saavncdn.com/850/7e1db499d6bd7ea4feb9a253e750337f_160.mp4' },
-            { title: 'Lo Maan Liya', src: 'https://aac.saavncdn.com/311/d60d7e9b00fb632d0518d4145e3f3eb1_160.mp4' },
-            { title: 'Kabhi Jo Baadal Barse', src: 'https://aac.saavncdn.com/151/98c60a124032ef442fd890cc2fdae7c7_160.mp4' },
-            { title: 'Khairiyat', src: 'https://aac.saavncdn.com/937/98dfd33cd388084fd76fadf65165a10e_160.mp4' },
-            { title: 'Ae Dill Hai Mushkill', src: 'https://aac.saavncdn.com/597/3b003e3fd083bad975ca12ca6f83c94d_160.mp4' }
-            
+                { title: 'Bekhayali', src: 'https://aac.saavncdn.com/807/db5027c7f61ea05b4f9841bfc056e1c5_160.mp4' },
+                { title: 'Phir Bhi Tumko Chaahunga', src: 'https://aac.saavncdn.com/441/5be788f75761b20e5dbcecdd3069a1c4_160.mp4' },
+                { title: 'Thodi Jagah', src: 'https://aac.saavncdn.com/951/f40fe87aa535a1095d095ec34892dbac_160.mp4' },
+                { title: 'Bhula Dena', src: 'https://aac.saavncdn.com/430/22b12410a6a242bf9b66e8b99d02254b_160.mp4' },
+                { title: 'Chal Wahan Jaate Hain', src: 'https://aac.saavncdn.com/119/c12ffa2f68c31b7244034cfc641a2143_160.mp4' },
+                { title: 'Zindagi Kuch Toh Bata', src: 'https://aac.saavncdn.com/128/1a24bc8c4d4303b4315f5dd192dc6116_160.mp4' },
+                { title: 'Baaton Ko Teri', src: 'https://aac.saavncdn.com/850/7e1db499d6bd7ea4feb9a253e750337f_160.mp4' },
+                { title: 'Lo Maan Liya', src: 'https://aac.saavncdn.com/311/d60d7e9b00fb632d0518d4145e3f3eb1_160.mp4' },
+                { title: 'Kabhi Jo Baadal Barse', src: 'https://aac.saavncdn.com/151/98c60a124032ef442fd890cc2fdae7c7_160.mp4' },
+                { title: 'Khairiyat', src: 'https://aac.saavncdn.com/937/98dfd33cd388084fd76fadf65165a10e_160.mp4' },
+                { title: 'Ae Dill Hai Mushkill', src: 'https://aac.saavncdn.com/597/3b003e3fd083bad975ca12ca6f83c94d_160.mp4' }
             ],
             'romantic-songs': [
                 { title: 'Raataan Lambiyan', src: 'https://aac.saavncdn.com/238/35726d4394604604e961bf5b846870d0_160.mp4' },
@@ -247,19 +245,19 @@
                 { title: 'Nagada Nagada', src: 'https://aac.saavncdn.com/223/7840ed76b16a665a1ef70c20c0153c78_160.mp4' },
             ]
         };
-
+    
         // Background images for each category
         const backgroundImages = {
             'sad-songs': 's.jpg', // Local image for Sad Songs
             'romantic-songs': 'r.jpg', // Local image for Romantic Songs
             'party-songs': 'p.jpg' // Local image for Party Songs
         };
-
+    
         // Function to change background image
         function changeBackground(category) {
             playlistPage.style.backgroundImage = `url('${backgroundImages[category]}')`;
         }
-
+    
         // Preload images for faster loading
         function preloadImages() {
             Object.values(backgroundImages).forEach((image) => {
@@ -267,37 +265,38 @@
                 img.src = image;
             });
         }
-
+    
         // Function to filter songs based on search query
         function filterSongs(query) {
             const allSongs = Object.values(categories).flat(); // Combine all songs into one array
             return allSongs.filter(song => song.title.toLowerCase().includes(query.toLowerCase()));
         }
-
+    
         // Function to display filtered songs
         function displayFilteredSongs(songs) {
             playlistCategory.innerHTML = '';
-            songs.forEach((song) => {
+            songs.forEach((song, index) => {
                 const playlistSong = document.createElement('div');
                 playlistSong.classList.add('playlist-song');
                 playlistSong.innerHTML = `
                     <p>${song.title}</p>
-                    <button class="btn btn-success" data-src="${song.src}" data-title="${song.title}">Play</button>
+                    <button class="btn btn-success" data-src="${song.src}" data-title="${song.title}" data-index="${index}">Play</button>
                 `;
                 playlistCategory.appendChild(playlistSong);
             });
-
+    
             // Add event listeners to play buttons
             const playButtons = document.querySelectorAll('.playlist-song button');
             playButtons.forEach((button) => {
                 button.addEventListener('click', function() {
                     const src = button.getAttribute('data-src');
                     const title = button.getAttribute('data-title');
-                    playSong(src, title, button);
+                    const index = button.getAttribute('data-index');
+                    playSong(src, title, button, index);
                 });
             });
         }
-
+    
         // Search functionality
         playlistSearch.addEventListener('input', function() {
             const query = playlistSearch.value.trim();
@@ -308,15 +307,15 @@
                 displayFilteredSongs(filteredSongs);
             }
         });
-
+    
         $(document).ready(function() {
             // Preload images for faster loading
             preloadImages();
-
+    
             // Show default category
             populatePlaylist('sad-songs');
             $('a[data-category="sad-songs"]').addClass('active');
-
+    
             $('a.nav-link').click(function() {
                 $('a.nav-link').removeClass('active');
                 $(this).addClass('active');
@@ -324,7 +323,7 @@
                 populatePlaylist(category);
                 changeBackground(category); // Change background based on category
             });
-
+    
             // Navbar animation on scroll
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 50) {
@@ -333,38 +332,44 @@
                     navbar.classList.remove('scrolled');
                 }
             });
-
+    
             // Show home page when navbar brand is clicked
             document.getElementById('navbar-brand').addEventListener('click', function() {
                 showHomePage();
             });
         });
-
+    
+        // Track the current song index
+        let currentSongIndex = 0;
+        let currentPlaylist = [];
+    
         function populatePlaylist(category) {
             playlistCategory.innerHTML = '';
             playlistTitle.textContent = category.replace('-', ' ').replace(/\b\w/g, char => char.toUpperCase());
-            const songs = categories[category];
-            songs.forEach((song) => {
+            currentPlaylist = categories[category];
+            currentPlaylist.forEach((song, index) => {
                 const playlistSong = document.createElement('div');
                 playlistSong.classList.add('playlist-song');
                 playlistSong.innerHTML = `
                     <p>${song.title}</p>
-                    <button class="btn btn-success" data-src="${song.src}" data-title="${song.title}">Play</button>
+                    <button class="btn btn-success" data-src="${song.src}" data-title="${song.title}" data-index="${index}">Play</button>
                 `;
                 playlistCategory.appendChild(playlistSong);
             });
-
+    
             const playButtons = document.querySelectorAll('.playlist-song button');
             playButtons.forEach((button) => {
                 button.addEventListener('click', function() {
                     const src = button.getAttribute('data-src');
                     const title = button.getAttribute('data-title');
-                    playSong(src, title, button);
+                    const index = button.getAttribute('data-index');
+                    playSong(src, title, button, index);
                 });
             });
         }
-
-        function playSong(src, title, button) {
+    
+        function playSong(src, title, button, index) {
+            currentSongIndex = parseInt(index); // Update the current song index
             if (audioPlayer.src !== src) {
                 audioPlayer.src = src;
                 audioPlayer.play();
@@ -384,13 +389,39 @@
                 button.classList.remove('btn-danger');
                 button.classList.add('btn-success');
             }
-
+    
+            // Autoplay next song when the current song ends
             audioPlayer.addEventListener('ended', () => {
-                button.textContent = 'Play';
-                button.classList.remove('btn-danger');
-                button.classList.add('btn-success');
+                currentSongIndex++;
+                if (currentSongIndex < currentPlaylist.length) {
+                    const nextSong = currentPlaylist[currentSongIndex];
+                    audioPlayer.src = nextSong.src;
+                    audioPlayer.play();
+                    songTitle.textContent = nextSong.title;
+                    resetPlayButtons();
+                    const nextButton = document.querySelector(`.playlist-song button[data-index="${currentSongIndex}"]`);
+                    if (nextButton) {
+                        nextButton.textContent = 'Pause';
+                        nextButton.classList.remove('btn-success');
+                        nextButton.classList.add('btn-danger');
+                    }
+                } else {
+                    // Reset to the first song if the playlist ends
+                    currentSongIndex = 0;
+                    const firstSong = currentPlaylist[currentSongIndex];
+                    audioPlayer.src = firstSong.src;
+                    audioPlayer.play();
+                    songTitle.textContent = firstSong.title;
+                    resetPlayButtons();
+                    const firstButton = document.querySelector(`.playlist-song button[data-index="${currentSongIndex}"]`);
+                    if (firstButton) {
+                        firstButton.textContent = 'Pause';
+                        firstButton.classList.remove('btn-success');
+                        firstButton.classList.add('btn-danger');
+                    }
+                }
             });
-
+    
             audioPlayer.addEventListener('error', () => {
                 alert('Error loading the audio file. Please try another song.');
                 button.textContent = 'Play';
@@ -398,7 +429,7 @@
                 button.classList.add('btn-success');
             });
         }
-
+    
         function resetPlayButtons() {
             const buttons = document.querySelectorAll('.playlist-song button');
             buttons.forEach((btn) => {
