@@ -89,7 +89,12 @@ const categories = {
         { title: 'Sau Dard', src: 'https://aac.saavncdn.com/289/5861f9870a6a37b17b307dc22d87300a_160.mp4' },
         { title: 'Aadat', src: 'https://aac.saavncdn.com/381/7aae1ca6f5d3a26a4e57b44320b77c90_160.mp4' },
         { title: 'Teri Khushboo', src: 'https://aac.saavncdn.com/931/0390fed32dd44520c9432b596079ebba_160.mp4' },
-        { title: 'Chale Aana', src: 'https://aac.saavncdn.com/777/be5ad77101034eb01f874e7cf9a5a825_160.mp4' }
+        { title: 'Chale Aana', src: 'https://aac.saavncdn.com/777/be5ad77101034eb01f874e7cf9a5a825_160.mp4' },
+        { title: 'Naina', src: 'https://aac.saavncdn.com/480/8e331fbcb8dd8b43f5f8918b1def2cca_160.mp4' },
+        { title: 'Phir Mulaaqat', src: 'https://aac.saavncdn.com/609/f6a54dbda3ac1143d8f2c60ce706fd24_160.mp4' },
+        { title: 'Mushkil', src: 'https://aac.saavncdn.com/291/3694cce6019ec2b0326acf8ee11cd086_160.mp4' },
+        { title: 'Dil De Diya', src: 'https://aac.saavncdn.com/712/9716d3c2521967b700c57741dec383c7_160.mp4' },
+        { title: 'Khair Mangda', src: 'https://aac.saavncdn.com/339/fdd6cda7f95be46123e73e2ba5384ddc_160.mp4' }
 
             
     ],
@@ -172,7 +177,8 @@ const categories = {
         { title: 'Joota Japani', src: 'https://aac.saavncdn.com/129/7a85dbcffbf0f174a44ceeaf1647fe91_160.mp4' },
         { title: 'Aayi Nai', src: 'https://aac.saavncdn.com/373/9a3ad2173b2e80bc6f9655d1da7c8f27_160.mp4' },
         { title: 'Tauba Tauba', src: 'https://aac.saavncdn.com/992/171edf6c7aeb1dcdb66c2abfacd99d61_160.mp4' },
-        { title: 'Morni', src: 'https://aac.saavncdn.com/798/c25a5aedb510b60de648b41457443586_160.mp4' }
+        { title: 'Morni', src: 'https://aac.saavncdn.com/798/c25a5aedb510b60de648b41457443586_160.mp4' },
+        { title: 'Tere Ishq Mein Naachenge', src: 'https://aac.saavncdn.com/317/4e20566a68f7fa97c733077361e5fca7_160.mp4' }
 
     ],
     '90s song': [
@@ -184,7 +190,9 @@ const categories = {
         { title: 'Dil Ke Badle Sanam', src: 'https://aac.saavncdn.com/522/2636852f19f658db64a549b9832845f0_160.mp4' },
         { title: 'Bole Chudiyan', src: 'https://aac.saavncdn.com/778/899d95d44fe4a91db0100fb23d24257f_160.mp4' },
         { title: 'Teri Chunnariya', src: 'https://aac.saavncdn.com/434/5ce9275a1b5460952bdc8a0cfc52749d_160.mp4' },
-        { title: 'Mujhse Mohabbat Ka', src: 'https://aac.saavncdn.com/080/140101f311da69efe42bfa7940f93058_160.mp4' }
+        { title: 'Mujhse Mohabbat Ka', src: 'https://aac.saavncdn.com/080/140101f311da69efe42bfa7940f93058_160.mp4' },
+        { title: 'Tere Ishq Mein Naachenge', src: 'https://aac.saavncdn.com/629/a91b2458b880c59154151bc696e268b4_160.mp4' },
+        { title: 'Oye Raju', src: 'https://aac.saavncdn.com/915/e1979402eccea4e1e76042e94a3f7e29_160.mp4' }
 
     ]
 };
