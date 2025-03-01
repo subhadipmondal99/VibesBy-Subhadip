@@ -196,7 +196,7 @@ const categories = {
         { title: 'Oye Raju', src: 'https://aac.saavncdn.com/915/e1979402eccea4e1e76042e94a3f7e29_160.mp4' }
 
     ],
-    'Stotram': [
+    'stotram': [
         { title: 'Shree Hari Stotram', src: 'https://aac.saavncdn.com/739/7465b5dbddd658b16d548ef1400b4823_160.mp4' },
         { title: 'Ashutosh Shashank Shekhar', src: 'https://aac.saavncdn.com/254/9b9d1cb5a1f9c0cec3eb68682f0c641d_160.mp4' },
         { title: 'Namami Shamishan', src: 'https://aac.saavncdn.com/045/b51ed9a6ab455f2d7ce28cdfa6ac7e4d_160.mp4' },
@@ -212,7 +212,7 @@ const backgroundImages = {
     'romantic-songs': 'r.jpg',
     'party-songs': 'p.jpg',
     '90s song': 'old.png'
-    'Stotram': 'swastik..jpg'
+    'stotram': 'swastik.jpg'
 };
 
 
