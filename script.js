@@ -139,7 +139,8 @@ const categories = {
         { title: 'Hua Hain Aaj Pehli Baar', src: 'https://aac.saavncdn.com/829/2b61f8b4be3166b8d7b9a135a6d29f87_160.mp4' },
         { title: 'Bol Do Na Zara', src: 'https://aac.saavncdn.com/633/2fddfdf78b3c810d561b594d15a9456b_160.mp4' },
         { title: 'Wajah Tum Ho', src: 'https://aac.saavncdn.com/597/2005650c4362a6f26ae03126bc4d5cc3_160.mp4' },
-        { title: 'Mujhko Barsaat Bana Lo', src: 'https://aac.saavncdn.com/432/b5f3c6292c24eb6f3aee4a54ff46f2c4_160.mp4' }
+        { title: 'Mujhko Barsaat Bana Lo', src: 'https://aac.saavncdn.com/432/b5f3c6292c24eb6f3aee4a54ff46f2c4_160.mp4' },
+        { title: 'Barsaat | Badass Ravi Kumar', src: 'https://aac.saavncdn.com/882/749c482bc7584bc9a2bab6f5e2ed156a_160.mp4' }
     ],
     'party-songs': [
         { title: 'Abhi toh party shuru hui hai', src: 'https://aac.saavncdn.com/199/de2b23423840c1a061eaa9109de8982f_160.mp4' },
@@ -194,6 +195,15 @@ const categories = {
         { title: 'Tere Ishq Mein Naachenge', src: 'https://aac.saavncdn.com/629/a91b2458b880c59154151bc696e268b4_160.mp4' },
         { title: 'Oye Raju', src: 'https://aac.saavncdn.com/915/e1979402eccea4e1e76042e94a3f7e29_160.mp4' }
 
+    ],
+    'Stotram': [
+        { title: 'Shree Hari Stotram', src: 'https://aac.saavncdn.com/739/7465b5dbddd658b16d548ef1400b4823_160.mp4' },
+        { title: 'Ashutosh Shashank Shekhar', src: 'https://aac.saavncdn.com/254/9b9d1cb5a1f9c0cec3eb68682f0c641d_160.mp4' },
+        { title: 'Namami Shamishan', src: 'https://aac.saavncdn.com/045/b51ed9a6ab455f2d7ce28cdfa6ac7e4d_160.mp4' },
+        { title: 'Nirvana Shatakam', src: 'https://aac.saavncdn.com/871/7a6106d985b5839acae19f7641923689_160.mp4' },
+        { title: 'Shiv Panchakshar Stotra', src: 'https://aac.saavncdn.com/065/84f50899adceb14d074cfe5f5ee90f18_160.mp4' },
+        { title: 'Mahamrityunjay Mantra', src: 'https://aac.saavncdn.com/521/1f4fe8863894de18a01e7b33c8befe7a_160.mp4' },
+        { title: 'Shiv Tandav Stotram', src: 'https://aac.saavncdn.com/641/5c79c9aa37bb9f6fbec1672cf7fb4e52_160.mp4' }
     ]
 };
 
@@ -202,6 +212,7 @@ const backgroundImages = {
     'romantic-songs': 'r.jpg',
     'party-songs': 'p.jpg',
     '90s song': 'old.png'
+    'Stotram': 'swastik..jpg'
 };
 
 
