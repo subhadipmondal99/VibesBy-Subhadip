@@ -95,8 +95,6 @@ const categories = {
         { title: 'Mushkil', src: 'https://aac.saavncdn.com/291/3694cce6019ec2b0326acf8ee11cd086_160.mp4' },
         { title: 'Dil De Diya', src: 'https://aac.saavncdn.com/712/9716d3c2521967b700c57741dec383c7_160.mp4' },
         { title: 'Khair Mangda', src: 'https://aac.saavncdn.com/339/fdd6cda7f95be46123e73e2ba5384ddc_160.mp4' }
-
-            
     ],
     'romantic-songs': [
         { title: 'Raataan Lambiyan', src: 'https://aac.saavncdn.com/238/35726d4394604604e961bf5b846870d0_160.mp4' },
@@ -140,7 +138,7 @@ const categories = {
         { title: 'Bol Do Na Zara', src: 'https://aac.saavncdn.com/633/2fddfdf78b3c810d561b594d15a9456b_160.mp4' },
         { title: 'Wajah Tum Ho', src: 'https://aac.saavncdn.com/597/2005650c4362a6f26ae03126bc4d5cc3_160.mp4' },
         { title: 'Mujhko Barsaat Bana Lo', src: 'https://aac.saavncdn.com/432/b5f3c6292c24eb6f3aee4a54ff46f2c4_160.mp4' },
-        { title: 'Barsaat | Badass Ravi Kumar', src: 'https://aac.saavncdn.com/882/749c482bc7584bc9a2bab6f5e2ed156a_160.mp4' }
+        { title: 'Barsaat  Badass Ravi Kumar', src: 'https://aac.saavncdn.com/882/749c482bc7584bc9a2bab6f5e2ed156a_160.mp4' }
     ],
     'party-songs': [
         { title: 'Abhi toh party shuru hui hai', src: 'https://aac.saavncdn.com/199/de2b23423840c1a061eaa9109de8982f_160.mp4' },
@@ -180,7 +178,6 @@ const categories = {
         { title: 'Tauba Tauba', src: 'https://aac.saavncdn.com/992/171edf6c7aeb1dcdb66c2abfacd99d61_160.mp4' },
         { title: 'Morni', src: 'https://aac.saavncdn.com/798/c25a5aedb510b60de648b41457443586_160.mp4' },
         { title: 'Tere Ishq Mein Naachenge', src: 'https://aac.saavncdn.com/317/4e20566a68f7fa97c733077361e5fca7_160.mp4' }
-
     ],
     '90s song': [
         { title: 'Mohabbat Dil Ka Sakoon', src: 'https://aac.saavncdn.com/541/7134d6ad8fc09e36f8ff5944e3fd8fd7_160.mp4' },
@@ -211,7 +208,7 @@ const backgroundImages = {
     'sad-songs': 's.jpg',
     'romantic-songs': 'r.jpg',
     'party-songs': 'p.jpg',
-    '90s song': 'old.png'
+    '90s song': 'old.png',
     'stotram': 'swastik.jpg'
 };
 
