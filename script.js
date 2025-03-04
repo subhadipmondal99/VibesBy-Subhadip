@@ -188,7 +188,16 @@ const categories = {
         { title: 'Teri Chunnariya', src: 'https://aac.saavncdn.com/434/5ce9275a1b5460952bdc8a0cfc52749d_160.mp4' },
         { title: 'Mujhse Mohabbat Ka', src: 'https://aac.saavncdn.com/080/140101f311da69efe42bfa7940f93058_160.mp4' },
         { title: 'Tere Ishq Mein Naachenge', src: 'https://aac.saavncdn.com/629/a91b2458b880c59154151bc696e268b4_160.mp4' },
-        { title: 'Oye Raju', src: 'https://aac.saavncdn.com/915/e1979402eccea4e1e76042e94a3f7e29_160.mp4' }
+        { title: 'Oye Raju', src: 'https://aac.saavncdn.com/915/e1979402eccea4e1e76042e94a3f7e29_160.mp4' },
+        { title: 'Ab tere dil mein hum aa gaye', src: 'https://aac.saavncdn.com/637/a1b0b7b5cd6a484b43a4d076faae2d81_sar_160.mp4' },
+        { title: 'Jhanjharia Uski Chhanak Gayi', src: 'https://aac.saavncdn.com/516/a273d1ab171ed2b9aca0d98325e14ca8_160.mp4' },
+        { title: 'Dil Tera Aashiq', src: 'https://aac.saavncdn.com/596/4ff2d92d00498e9d1b20c8fdba741b1f_160.mp4' },
+        { title: 'Barsaat Ke Mausam', src: 'https://aac.saavncdn.com/769/d8cbcb023a70c68172858c7117f85a5b_160.mp4' },
+        { title: 'Aaj Phir Jeene Ki Tamanna Hai', src: 'https://aac.saavncdn.com/870/01035f620a3eadf8d24ebe15bd53a4a1_160.mp4' },
+        { title: 'Ek Hasina Thi Ek Diwana Tha', src: 'https://aac.saavncdn.com/197/583c25fcf7fd79fb030c4493885fc733_160.mp4' },
+        { title: 'Jawani Jan-E-Man', src: 'https://aac.saavncdn.com/243/89fc48cd8b40aa5b152cd6ed1b0fb9ad_sar_160.mp4' },
+        { title: 'Hai Rama', src: 'https://aac.saavncdn.com/461/91059bbd5473711ff08d59c1c125aeb9_160.mp4' },
+        { title: 'Saiyyan Dil Mein Aana Re |', src: 'https://aac.saavncdn.com/110/d839af4ce945be80793cfcd0d62fc670_sar_160.mp4' }
 
     ],
     'stotram': [
