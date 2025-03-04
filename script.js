@@ -1,16 +1,14 @@
 function showPlaylistPage(category) {
     document.querySelector('.home-page').style.display = 'none';
     document.querySelector('.playlist-page').style.display = 'block';
-    populatePlaylist(category); // Populate the playlist
-    changeBackground(category); // Set the background image
+    populatePlaylist(category);
+    changeBackground(category);
 }
-
 
 function showHomePage() {
     document.querySelector('.home-page').style.display = 'flex';
     document.querySelector('.playlist-page').style.display = 'none';
 }
-
 
 const playlistCategory = document.getElementById('playlist-category');
 const audioPlayer = document.getElementById('audio-player');
@@ -212,11 +210,9 @@ const backgroundImages = {
     'stotram': 'swastik.jpg'
 };
 
-
 function changeBackground(category) {
     playlistPage.style.backgroundImage = `url('${backgroundImages[category]}')`;
 }
-
 
 function preloadImages() {
     Object.values(backgroundImages).forEach((image) => {
@@ -225,12 +221,10 @@ function preloadImages() {
     });
 }
 
-
 function filterSongs(query) {
     const allSongs = Object.values(categories).flat();
     return allSongs.filter(song => song.title.toLowerCase().includes(query.toLowerCase()));
 }
-
 
 function displayFilteredSongs(songs) {
     playlistCategory.innerHTML = '';
@@ -244,7 +238,6 @@ function displayFilteredSongs(songs) {
         playlistCategory.appendChild(playlistSong);
     });
 
-
     const playButtons = document.querySelectorAll('.playlist-song button');
     playButtons.forEach((button) => {
         button.addEventListener('click', function() {
@@ -255,7 +248,6 @@ function displayFilteredSongs(songs) {
         });
     });
 }
-
 
 playlistSearch.addEventListener('input', function() {
     const query = playlistSearch.value.trim();
@@ -268,21 +260,23 @@ playlistSearch.addEventListener('input', function() {
 });
 
 $(document).ready(function() {
-
     preloadImages();
-
-
     populatePlaylist('sad-songs');
     $('a[data-category="sad-songs"]').addClass('active');
 
-    $('a.nav-link').click(function() {
+    $('a.nav-link').click(function(e) {
+        e.preventDefault();
         $('a.nav-link').removeClass('active');
         $(this).addClass('active');
         const category = $(this).data('category');
         populatePlaylist(category);
         changeBackground(category);
+        
+        // Auto-collapse navbar after selection
+        if ($('#navbarSupportedContent').hasClass('show')) {
+            $('#navbarSupportedContent').collapse('hide');
+        }
     });
-
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -292,18 +286,18 @@ $(document).ready(function() {
         }
     });
 
-    document.getElementById('navbar-brand').addEventListener('click', function() {
+    document.getElementById('navbar-brand').addEventListener('click', function(e) {
+        e.preventDefault();
         showHomePage();
     });
 });
-
 
 let currentSongIndex = 0;
 let currentPlaylist = [];
 
 function populatePlaylist(category) {
     playlistCategory.innerHTML = '';
-    playlistTitle.textContent = category.replace('-', ' ').replace(/\b\w/g, char => char.toUpperCase());
+    playlistTitle.textContent = category.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
     currentPlaylist = categories[category];
     currentPlaylist.forEach((song, index) => {
         const playlistSong = document.createElement('div');
@@ -348,7 +342,6 @@ function playSong(src, title, button, index) {
         button.classList.add('btn-success');
     }
 
-
     audioPlayer.addEventListener('ended', () => {
         currentSongIndex++;
         if (currentSongIndex < currentPlaylist.length) {
@@ -364,7 +357,6 @@ function playSong(src, title, button, index) {
                 nextButton.classList.add('btn-danger');
             }
         } else {
-
             currentSongIndex = 0;
             const firstSong = currentPlaylist[currentSongIndex];
             audioPlayer.src = firstSong.src;
