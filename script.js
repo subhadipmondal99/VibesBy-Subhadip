@@ -318,6 +318,7 @@ function populatePlaylist(category) {
         playlistCategory.appendChild(playlistSong);
     });
 
+    // Add Event Listeners to Playlist Songs
     const playButtons = document.querySelectorAll('.playlist-song button');
     playButtons.forEach((button) => {
         button.addEventListener('click', function() {
@@ -329,6 +330,7 @@ function populatePlaylist(category) {
     });
 }
 
+// Play Song Function
 function playSong(src, title, button, index) {
     currentSongIndex = parseInt(index);
     if (audioPlayer.src !== src) {
@@ -338,21 +340,27 @@ function playSong(src, title, button, index) {
         });
         songTitle.textContent = title;
         resetPlayButtons();
-        button.textContent = 'Pause';
-        button.classList.remove('btn-success');
-        button.classList.add('btn-danger');
+        if (button) {
+            button.textContent = 'Pause';
+            button.classList.remove('btn-success');
+            button.classList.add('btn-danger');
+        }
     } else if (audioPlayer.paused) {
         audioPlayer.play().catch(error => {
             handleAudioError(button);
         });
-        button.textContent = 'Pause';
-        button.classList.remove('btn-success');
-        button.classList.add('btn-danger');
+        if (button) {
+            button.textContent = 'Pause';
+            button.classList.remove('btn-success');
+            button.classList.add('btn-danger');
+        }
     } else {
         audioPlayer.pause();
-        button.textContent = 'Play';
-        button.classList.remove('btn-danger');
-        button.classList.add('btn-success');
+        if (button) {
+            button.textContent = 'Play';
+            button.classList.remove('btn-danger');
+            button.classList.add('btn-success');
+        }
     }
 
     // Automatically Play Next Song When Current Song Ends
@@ -403,11 +411,13 @@ function loadNextSong() {
     currentSongIndex++;
     if (currentSongIndex < currentPlaylist.length) {
         const nextSong = currentPlaylist[currentSongIndex];
-        playSong(nextSong.src, nextSong.title, null, currentSongIndex);
+        const nextButton = document.querySelector(`.playlist-song button[data-index="${currentSongIndex}"]`);
+        playSong(nextSong.src, nextSong.title, nextButton, currentSongIndex);
     } else {
         currentSongIndex = 0;
         const firstSong = currentPlaylist[currentSongIndex];
-        playSong(firstSong.src, firstSong.title, null, currentSongIndex);
+        const firstButton = document.querySelector(`.playlist-song button[data-index="${currentSongIndex}"]`);
+        playSong(firstSong.src, firstSong.title, firstButton, currentSongIndex);
     }
 }
 
