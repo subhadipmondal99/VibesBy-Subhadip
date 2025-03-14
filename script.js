@@ -333,14 +333,18 @@ function playSong(src, title, button, index) {
     currentSongIndex = parseInt(index);
     if (audioPlayer.src !== src) {
         audioPlayer.src = src;
-        audioPlayer.play();
+        audioPlayer.play().catch(error => {
+            handleAudioError(button);
+        });
         songTitle.textContent = title;
         resetPlayButtons();
         button.textContent = 'Pause';
         button.classList.remove('btn-success');
         button.classList.add('btn-danger');
     } else if (audioPlayer.paused) {
-        audioPlayer.play();
+        audioPlayer.play().catch(error => {
+            handleAudioError(button);
+        });
         button.textContent = 'Pause';
         button.classList.remove('btn-success');
         button.classList.add('btn-danger');
@@ -351,44 +355,63 @@ function playSong(src, title, button, index) {
         button.classList.add('btn-success');
     }
 
+    // Automatically Play Next Song When Current Song Ends
     audioPlayer.addEventListener('ended', () => {
-        currentSongIndex++;
-        if (currentSongIndex < currentPlaylist.length) {
-            const nextSong = currentPlaylist[currentSongIndex];
-            audioPlayer.src = nextSong.src;
-            audioPlayer.play();
-            songTitle.textContent = nextSong.title;
-            resetPlayButtons();
-            const nextButton = document.querySelector(`.playlist-song button[data-index="${currentSongIndex}"]`);
-            if (nextButton) {
-                nextButton.textContent = 'Pause';
-                nextButton.classList.remove('btn-success');
-                nextButton.classList.add('btn-danger');
-            }
-        } else {
-            currentSongIndex = 0;
-            const firstSong = currentPlaylist[currentSongIndex];
-            audioPlayer.src = firstSong.src;
-            audioPlayer.play();
-            songTitle.textContent = firstSong.title;
-            resetPlayButtons();
-            const firstButton = document.querySelector(`.playlist-song button[data-index="${currentSongIndex}"]`);
-            if (firstButton) {
-                firstButton.textContent = 'Pause';
-                firstButton.classList.remove('btn-success');
-                firstButton.classList.add('btn-danger');
-            }
-        }
+        loadNextSong();
     });
 
+    // Handle Audio Errors
     audioPlayer.addEventListener('error', () => {
-        alert('Error loading the audio file. Please try another song.');
-        button.textContent = 'Play';
-        button.classList.remove('btn-danger');
-        button.classList.add('btn-success');
+        handleAudioError(button);
     });
 }
 
+// Handle Audio Errors
+function handleAudioError(button) {
+    // Display Error Message
+    const errorMessage = document.createElement('div');
+    errorMessage.textContent = 'SUBHADIP Is Busy Now. Error loading the audio file. Loading next song...';
+    errorMessage.style.position = 'fixed';
+    errorMessage.style.top = '20px';
+    errorMessage.style.left = '50%';
+    errorMessage.style.transform = 'translateX(-50%)';
+    errorMessage.style.backgroundColor = 'rgba(255, 0, 0, 0.8)';
+    errorMessage.style.color = 'white';
+    errorMessage.style.padding = '10px';
+    errorMessage.style.borderRadius = '5px';
+    errorMessage.style.zIndex = '1000';
+    document.body.appendChild(errorMessage);
+
+    // Remove Error Message After 3 Seconds
+    setTimeout(() => {
+        document.body.removeChild(errorMessage);
+    }, 2000);
+
+    // Change Button State
+    if (button) {
+        button.textContent = 'Play';
+        button.classList.remove('btn-danger');
+        button.classList.add('btn-success');
+    }
+
+    // Load Next Song
+    loadNextSong();
+}
+
+// Load Next Song in Playlist
+function loadNextSong() {
+    currentSongIndex++;
+    if (currentSongIndex < currentPlaylist.length) {
+        const nextSong = currentPlaylist[currentSongIndex];
+        playSong(nextSong.src, nextSong.title, null, currentSongIndex);
+    } else {
+        currentSongIndex = 0;
+        const firstSong = currentPlaylist[currentSongIndex];
+        playSong(firstSong.src, firstSong.title, null, currentSongIndex);
+    }
+}
+
+// Reset All Play Buttons to Default State
 function resetPlayButtons() {
     const buttons = document.querySelectorAll('.playlist-song button');
     buttons.forEach((btn) => {
