@@ -175,7 +175,13 @@ const categories = {
         { title: 'Aayi Nai', src: 'https://aac.saavncdn.com/373/9a3ad2173b2e80bc6f9655d1da7c8f27_160.mp4' },
         { title: 'Tauba Tauba', src: 'https://aac.saavncdn.com/992/171edf6c7aeb1dcdb66c2abfacd99d61_160.mp4' },
         { title: 'Morni', src: 'https://aac.saavncdn.com/798/c25a5aedb510b60de648b41457443586_160.mp4' },
-        { title: 'Tere Ishq Mein Naachenge', src: 'https://aac.saavncdn.com/317/4e20566a68f7fa97c733077361e5fca7_160.mp4' }
+        { title: 'Tere Ishq Mein Naachenge', src: 'https://aac.saavncdn.com/317/4e20566a68f7fa97c733077361e5fca7_160.mp4' },
+        { title: 'Kala Chashma', src: 'https://aac.saavncdn.com/279/ac760f157a9cf82a96ac1440b01bdf18_160.mp4' },
+        { title: 'High Heels Te Nachche', src: 'https://aac.saavncdn.com/973/055092f943676fad575f41d6eea800e5_160.mp4' },
+        { title: 'London Thumakda', src: 'https://aac.saavncdn.com/125/1b203d1d1e51a1bd0035baa481cb1b13_160.mp4' },
+        { title: 'Gallan Goodiyan', src: 'https://aac.saavncdn.com/240/2a80b5248e85af6a6567011982bc5cfc_160.mp4' },
+        { title: 'Saturday Saturday', src: 'https://aac.saavncdn.com/461/e3a3567afc0c1ded6ae4ef29db17bb12_160.mp4' }
+
     ],
     '90s song': [
         { title: 'Mohabbat Dil Ka Sakoon', src: 'https://aac.saavncdn.com/541/7134d6ad8fc09e36f8ff5944e3fd8fd7_160.mp4' },
