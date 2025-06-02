@@ -20,6 +20,7 @@ const playlistPage = document.getElementById('playlist-page');
 
 const categories = {
     'sad-songs': [
+        { title: 'Samandar', src: 'https://aac.saavncdn.com/089/ea6c557dd5e34c18126c62e8b6a1e99f_160.mp4' },
         { title: 'Bekhayali', src: 'https://aac.saavncdn.com/807/db5027c7f61ea05b4f9841bfc056e1c5_160.mp4' },
         { title: 'Phir Bhi Tumko Chaahunga', src: 'https://aac.saavncdn.com/441/5be788f75761b20e5dbcecdd3069a1c4_160.mp4' },
         { title: 'Thodi Jagah', src: 'https://aac.saavncdn.com/951/f40fe87aa535a1095d095ec34892dbac_160.mp4' },
@@ -95,6 +96,7 @@ const categories = {
         { title: 'Khair Mangda', src: 'https://aac.saavncdn.com/339/fdd6cda7f95be46123e73e2ba5384ddc_160.mp4' }
     ],
     'romantic-songs': [
+        { title: 'Barsaat Ki Dhun', src: 'https://aac.saavncdn.com/600/34fcd4b1b45889b24dd35246104156e7_160.mp4' },
         { title: 'Raataan Lambiyan', src: 'https://aac.saavncdn.com/238/35726d4394604604e961bf5b846870d0_160.mp4' },
         { title: 'Apna Bana le', src: 'https://aac.saavncdn.com/815/483a6e118e8108cbb3e5cd8701674f32_160.mp4' },
         { title: 'Agar Tum Saath Ho', src: 'https://aac.saavncdn.com/994/2e6b47719cea3e7c9f971a3f1ddc9b0a_160.mp4' },
