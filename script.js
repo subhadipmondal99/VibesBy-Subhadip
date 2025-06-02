@@ -183,6 +183,11 @@ const categories = {
         { title: 'Saturday Saturday', src: 'https://aac.saavncdn.com/461/e3a3567afc0c1ded6ae4ef29db17bb12_160.mp4' }
 
     ],
+    'bhojpuri-songs': [
+        { title: 'Palang Sagwan Ke', src: 'https://aac.saavncdn.com/431/0f7118b2556ba75e482135f493faf0be_160.mp4' },
+        { title: 'Raja Ji', src: 'https://aac.saavncdn.com/651/60a4160ca0d9394fafb4da383bf89cf0_160.mp4' },
+        { title: 'Rajaji Ke Dilwa', src: 'https://aac.saavncdn.com/796/56b30e163800933588261c02eb3f8994_160.mp4' }
+    ],
     '90s song': [
         { title: 'Mohabbat Dil Ka Sakoon', src: 'https://aac.saavncdn.com/541/7134d6ad8fc09e36f8ff5944e3fd8fd7_160.mp4' },
         { title: 'Main Agar Saamne', src: 'https://aac.saavncdn.com/998/719b9d1bb5019b4ee110ddc2b0725e59_160.mp4' },
@@ -247,6 +252,7 @@ const backgroundImages = {
     'sad-songs': 's.jpg',
     'romantic-songs': 'r.jpg',
     'party-songs': 'p.jpg',
+    'bhojpuri-songs': 'b.jpg',
     '90s song': 'old.png',
     'stotram': 'swastik.jpg'
 };
